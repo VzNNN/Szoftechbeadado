@@ -14,6 +14,7 @@
 
 
     <Window.Resources>
+        <local:BoolToBrush x:Key="BoolToBrushConverter"/>
 
         <!--// Toggle Button Style Template //-->
 
@@ -241,9 +242,7 @@
 
         <!--// Background Color //-->
 
-        <Grid Background="LightGray">
-
-
+        <Grid Background="{Binding DarkMode, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BoolToBrushConverter}}">
 
 
             <Grid>
@@ -449,7 +448,7 @@
                                Background="Transparent"
                                BorderBrush="Transparent"
                                ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-                        
+
 
                         <!--// Home //-->
 
@@ -727,4 +726,5 @@
         </Grid>
 
     </Grid>
+
 </Window>

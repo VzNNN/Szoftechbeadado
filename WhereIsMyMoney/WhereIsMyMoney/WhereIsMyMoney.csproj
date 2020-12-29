@@ -89,6 +89,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Command\UpdateViewCommand.cs" />
+    <Compile Include="Converter\BoolToBrush.cs" />
     <Compile Include="Enums\BindingEnums.cs" />
     <Compile Include="Enums\IncomesEnum.cs" />
     <Compile Include="Models\Income.cs">

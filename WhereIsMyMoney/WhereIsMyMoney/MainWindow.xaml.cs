@@ -6,10 +6,12 @@ namespace WhereIsMyMoney
 {
     public partial class MainWindow : Window
     {
+        private readonly MainViewModel _MainViewModel;
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
+            _MainViewModel = new MainViewModel();
+            DataContext = _MainViewModel;
         }
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
@@ -34,7 +36,7 @@ namespace WhereIsMyMoney
 
         private void DayNightSetBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            _MainViewModel.DarkMode = !_MainViewModel.DarkMode;
         }
 
         private void LanguageSetBtn_Click(object sender, RoutedEventArgs e)
