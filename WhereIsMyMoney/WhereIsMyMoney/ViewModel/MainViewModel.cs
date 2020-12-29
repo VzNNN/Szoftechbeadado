@@ -15,7 +15,7 @@ namespace WhereIsMyMoney.ViewModel
             set
             {
                 darkMode = value;
-                //OnPropertyChange("DarkMode");
+                
             }
         }
 
