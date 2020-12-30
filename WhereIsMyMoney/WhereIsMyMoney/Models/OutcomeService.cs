@@ -46,7 +46,7 @@ namespace WhereIsMyMoney.Models
 
             try
             {
-                var outc = new Outcome();
+                var outc = new Outcomes();
                 outc.Value = outcome.Value;
                 outc.Type = outcome.Type;
                 outc.Duration = outcome.Duration;

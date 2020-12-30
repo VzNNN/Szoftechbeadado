@@ -46,7 +46,7 @@ namespace WhereIsMyMoney.Models
 
             try
             {
-                var inc = new Income();
+                var inc = new Incomes();
                 inc.Value = income.Value;
                 inc.Type = income.Type;
                 inc.Duration = income.Duration;

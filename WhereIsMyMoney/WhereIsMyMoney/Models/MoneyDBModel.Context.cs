@@ -25,7 +25,7 @@ namespace WhereIsMyMoney.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Income> Incomes { get; set; }
-        public virtual DbSet<Outcome> Outcomes { get; set; }
+        public virtual DbSet<Incomes> Incomes { get; set; }
+        public virtual DbSet<Outcomes> Outcomes { get; set; }
     }
 }

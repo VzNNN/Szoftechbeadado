@@ -92,7 +92,7 @@
     <Compile Include="Converter\BoolToBrush.cs" />
     <Compile Include="Enums\BindingEnums.cs" />
     <Compile Include="Enums\IncomesEnum.cs" />
-    <Compile Include="Models\Income.cs">
+    <Compile Include="Models\Incomes.cs">
       <DependentUpon>MoneyDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\IncomeService.cs" />
@@ -113,7 +113,7 @@
     </Compile>
     <Compile Include="Models\MoneyDTO.cs" />
     <Compile Include="Enums\OutcomesEnum.cs" />
-    <Compile Include="Models\Outcome.cs">
+    <Compile Include="Models\Outcomes.cs">
       <DependentUpon>MoneyDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OutcomeService.cs" />

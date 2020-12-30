@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5be667f7148c4908bf4c4457fdcf3c72" Name="Diagram1">
-        <EntityTypeShape EntityType="WhereIsMyMoneyDBModel.Income" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WhereIsMyMoneyDBModel.Outcome" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="78c05191467c4990aa4acd8a4150b0ad" Name="Diagram1">
+        <EntityTypeShape EntityType="WhereIsMyMoneyDBModel.Incomes" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WhereIsMyMoneyDBModel.Outcomes" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
