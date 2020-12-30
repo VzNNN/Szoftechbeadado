@@ -274,6 +274,7 @@
       <DependentUpon>MoneyDBModel.edmx</DependentUpon>
       <LastGenOutput>MoneyDBModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\mainbg.png" />
     <Content Include="SQLServer\WhereIsMyMoneyDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -9,7 +9,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
 
     <!--Have to remove it just for testing-->
-    
+  
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
@@ -72,11 +72,11 @@
                 Grid.Row="9" Command="{Binding Path=addCommand}">
         </Button>
         <Label x:Name="Message" Grid.Column="1" Grid.Row="10" Content="{Binding Path=Message}"/>
-        <DataGrid ItemsSource="{Binding Path=Incomes}" Foreground="Black" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="7">
+        <DataGrid  ItemsSource="{Binding Path=Incomes}" Foreground="Black" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="7">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="{x:Static languages:Lang.typeofincome}" Binding="{Binding Type}"/>
-                <DataGridTextColumn Header="{x:Static languages:Lang._for}" Binding="{Binding Duration}"/>
-                <DataGridTextColumn Header="{x:Static languages:Lang.monthly}" Binding="{Binding Value}"/>
+                <DataGridTextColumn Width="0.40*" Header="{x:Static languages:Lang.typeofincome}" Binding="{Binding Type}"/>
+                <DataGridTextColumn Width="0.35*" Header="{x:Static languages:Lang._for}" Binding="{Binding Duration}"/>
+                <DataGridTextColumn Width="0.25*" Header="{x:Static languages:Lang.monthly}" Binding="{Binding Value}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
