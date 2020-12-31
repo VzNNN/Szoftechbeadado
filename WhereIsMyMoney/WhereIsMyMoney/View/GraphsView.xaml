@@ -7,6 +7,28 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock Text="GRAPH" FontSize="200"></TextBlock>    
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="100px"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="100px"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="100px"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="15px"/>
+
+            <RowDefinition Height="50px"/>
+
+            <RowDefinition Height="50px"/>
+
+
+        </Grid.RowDefinitions>
+
+        <Button Grid.Column="1" Grid.Row="1" Content="Incomes graph" Click="Button_Click"/>
+        <Button Grid.Column="3" Grid.Row="1" Content="Outcomes graph" Click="Button_Click_2"/>
+        <Button Grid.Column="5" Grid.Row="1" Content="Money graph" Click="Button_Click_1"/>
     </Grid>
 </UserControl>

@@ -24,5 +24,23 @@ namespace WhereIsMyMoney.View
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Graph1 graph1 = new Graph1();
+            graph1.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Graph3 graph3 = new Graph3();
+            graph3.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Graph2 graph2 = new Graph2();
+            graph2.Show();
+        }
     }
 }

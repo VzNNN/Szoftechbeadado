@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Gergely Horvath\Desktop\Szoftechbeadado-master\WhereIsMyMoney\WhereIsMyMoney\obj\Release\
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\obj\Release\
 WhereIsMyMoney
 none
 false
 TRACE
-C:\Users\Gergely Horvath\Desktop\Szoftechbeadado-master\WhereIsMyMoney\WhereIsMyMoney\App.xaml
-7-780266405
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\App.xaml
+10-1199473558
 6-1730044777
-35-521120424
-191296994725
-MainWindow.xaml;View\ExchangesView.xaml;View\GraphsView.xaml;View\HomeView.xaml;View\IncomesView.xaml;View\OutcomesView.xaml;View\SavesView.xaml;
+42-438070986
+30-1829237799
+View\Graph1.xaml;MainWindow.xaml;View\ExchangesView.xaml;View\Graph2.xaml;View\Graph3.xaml;View\GraphsView.xaml;View\HomeView.xaml;View\IncomesView.xaml;View\OutcomesView.xaml;View\SavesView.xaml;
 
-True
+False
 
