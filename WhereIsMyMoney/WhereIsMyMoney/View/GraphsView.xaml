@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:languages="clr-namespace:WhereIsMyMoney.Properties.AppLang"
              xmlns:local="clr-namespace:WhereIsMyMoney.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -148,7 +149,7 @@
                HorizontalAlignment="Center"
                FontWeight="Bold"
             
-            Content="Your incomes&#10;graph"   Grid.Row="0" Grid.Column="1">
+            Content="{x:Static languages:Lang.yourin}"   Grid.Row="0" Grid.Column="1">
             
         </Label>
 
@@ -157,7 +158,7 @@
                VerticalAlignment="Center"
                HorizontalAlignment="Center"
                FontWeight="Bold"
-            Content="Your outcomes&#10;graph"  Grid.Row="0" Grid.Column="3">
+            Content="{x:Static languages:Lang.yourout}"  Grid.Row="0" Grid.Column="3">
 
         </Label>
 
@@ -167,7 +168,7 @@
                VerticalAlignment="Center"
                HorizontalAlignment="Center"
                FontWeight="Bold"
-               Content="Total money&#10;distribution"
+               Content="{x:Static languages:Lang.totalm}"
             Grid.Row="0" Grid.Column="5">
 
         </Label>

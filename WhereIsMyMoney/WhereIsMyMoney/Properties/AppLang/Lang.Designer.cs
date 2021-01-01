@@ -97,6 +97,15 @@ namespace WhereIsMyMoney.Properties.AppLang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to distribution.
+        /// </summary>
+        public static string distribution {
+            get {
+                return ResourceManager.GetString("distribution", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Duration in months:.
         /// </summary>
         public static string duration {
@@ -129,6 +138,15 @@ namespace WhereIsMyMoney.Properties.AppLang {
         public static string from {
             get {
                 return ResourceManager.GetString("from", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to graph.
+        /// </summary>
+        public static string graph {
+            get {
+                return ResourceManager.GetString("graph", resourceCulture);
             }
         }
         
@@ -223,6 +241,16 @@ namespace WhereIsMyMoney.Properties.AppLang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total money
+        ///distribution.
+        /// </summary>
+        public static string totalm {
+            get {
+                return ResourceManager.GetString("totalm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Type:.
         /// </summary>
         public static string type {
@@ -255,6 +283,26 @@ namespace WhereIsMyMoney.Properties.AppLang {
         public static string value {
             get {
                 return ResourceManager.GetString("value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your incomes
+        ///graph.
+        /// </summary>
+        public static string yourin {
+            get {
+                return ResourceManager.GetString("yourin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your outcomes
+        ///graph.
+        /// </summary>
+        public static string yourout {
+            get {
+                return ResourceManager.GetString("yourout", resourceCulture);
             }
         }
     }

@@ -126,6 +126,9 @@
   <data name="calculate" xml:space="preserve">
     <value>Calculate Savings</value>
   </data>
+  <data name="distribution" xml:space="preserve">
+    <value>distribution</value>
+  </data>
   <data name="duration" xml:space="preserve">
     <value>Duration in months:</value>
   </data>
@@ -140,6 +143,9 @@
   </data>
   <data name="from" xml:space="preserve">
     <value>From:</value>
+  </data>
+  <data name="graph" xml:space="preserve">
+    <value>graph</value>
   </data>
   <data name="graphs" xml:space="preserve">
     <value>Graphs</value>
@@ -171,6 +177,10 @@
   <data name="total" xml:space="preserve">
     <value>Total Amount</value>
   </data>
+  <data name="totalm" xml:space="preserve">
+    <value>Total money
+distribution</value>
+  </data>
   <data name="type" xml:space="preserve">
     <value>Type:</value>
   </data>
@@ -182,5 +192,13 @@
   </data>
   <data name="value" xml:space="preserve">
     <value>Value:</value>
+  </data>
+  <data name="yourin" xml:space="preserve">
+    <value>Your incomes
+graph</value>
+  </data>
+  <data name="yourout" xml:space="preserve">
+    <value>Your outcomes
+graph</value>
   </data>
 </root>

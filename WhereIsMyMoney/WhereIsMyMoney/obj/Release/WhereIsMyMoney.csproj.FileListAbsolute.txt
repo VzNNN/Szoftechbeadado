@@ -338,3 +338,4 @@ C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Nito.Asy
 C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Nito.AsyncEx.Tasks.xml
 C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Nito.Disposables.xml
 C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\System.Collections.Immutable.xml
+C:\Users\horva\OneDrive\Asztali gép\git\WhereIsMyMoney\WhereIsMyMoney\obj\Release\WhereIsMyMoney.csprojAssemblyReference.cache

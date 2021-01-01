@@ -126,6 +126,9 @@
   <data name="calculate" xml:space="preserve">
     <value>Megtakarítások kiszámolása</value>
   </data>
+  <data name="distribution" xml:space="preserve">
+    <value>kimutatása</value>
+  </data>
   <data name="duration" xml:space="preserve">
     <value>Időtartam hónapokban:</value>
   </data>
@@ -140,6 +143,9 @@
   </data>
   <data name="from" xml:space="preserve">
     <value>Miről:</value>
+  </data>
+  <data name="graph" xml:space="preserve">
+    <value>grafikonja</value>
   </data>
   <data name="graphs" xml:space="preserve">
     <value>Grafikonok</value>
@@ -171,6 +177,10 @@
   <data name="total" xml:space="preserve">
     <value>Teljes összeg</value>
   </data>
+  <data name="totalm" xml:space="preserve">
+    <value>Összegzett
+kimutatás</value>
+  </data>
   <data name="type" xml:space="preserve">
     <value>Típus:</value>
   </data>
@@ -182,5 +192,13 @@
   </data>
   <data name="value" xml:space="preserve">
     <value>Érték:</value>
+  </data>
+  <data name="yourin" xml:space="preserve">
+    <value>Jövedelmeid
+grafikonja</value>
+  </data>
+  <data name="yourout" xml:space="preserve">
+    <value>Költségeid
+grafikonja</value>
   </data>
 </root>
