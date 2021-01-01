@@ -9,7 +9,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
 
     <!--Have to remove it just for testing-->
-  
+    
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
@@ -24,10 +25,10 @@
             
             <RowDefinition Height="60"/>
             <RowDefinition Height="60"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
@@ -41,18 +42,30 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    FontWeight="Bold" Content="{x:Static languages:Lang.incomes}"/>
-        <TextBox Grid.Row="3"
+        <TextBox 
+            FontSize="20"
+            Grid.Row="3"
                  Grid.Column="1"
                  Text="{Binding Path=CurrentIncome.Value, Mode=TwoWay}"/>
         <Label Grid.Row="2"
                    Grid.Column="1"
-                   FontWeight="Bold" Content="{x:Static languages:Lang.value}"/>
-        <ComboBox Grid.Row="5"
+                   FontWeight="Bold"
+               FontSize="20"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Content="{x:Static languages:Lang.value}"/>
+        <ComboBox 
+            FontSize="20"
+            Grid.Row="5"
                   Grid.Column="1" SelectedIndex="0" SelectedItem="{Binding Path=CurrentIncome.Type, Mode=TwoWay}"
             ItemsSource="{Binding Source={local:BindingEnums {x:Type local:IncomesType}}}">
             
         </ComboBox>
-        <Label Grid.Row="4"
+        <Label 
+            FontSize="20"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+            Grid.Row="4"
                    Grid.Column="1"
                    FontWeight="Bold" Content="{x:Static languages:Lang.type}"/>
 
@@ -60,19 +73,26 @@
                     Margin="10"
                     Grid.Row="8"
                     Grid.Column="1">
-            <Label FontWeight="Bold" Content="{x:Static languages:Lang.duration}"/>
+            <Label 
+                FontSize="20"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+                FontWeight="Bold" Content="{x:Static languages:Lang.duration}"/>
             <StackPanel Orientation="Vertical">
                 <Slider  Minimum="1" Maximum="12" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="1" Name="slValue" Value="{Binding Path=CurrentIncome.Duration, Mode=TwoWay}" />
                 <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Right" Width="20" />
             </StackPanel>
         </StackPanel>
-        <Button x:Name="bttnSubmit" 
+        <Button 
+            FontSize="20"
+              
+            x:Name="bttnSubmit" 
                 Content="{x:Static languages:Lang.add}"
                 Grid.Column="1"
                 Grid.Row="9" Command="{Binding Path=addCommand}">
         </Button>
         <Label x:Name="Message" Grid.Column="1" Grid.Row="10" Content="{Binding Path=Message}"/>
-        <DataGrid  ItemsSource="{Binding Path=Incomes}" Foreground="Black" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="7">
+        <DataGrid  ItemsSource="{Binding Path=Incomes}" Foreground="Black" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="8">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="0.40*" Header="{x:Static languages:Lang.typeofincome}" Binding="{Binding Type}"/>
                 <DataGridTextColumn Width="0.35*" Header="{x:Static languages:Lang._for}" Binding="{Binding Duration}"/>

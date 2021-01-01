@@ -18,6 +18,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -30,7 +31,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -68,11 +68,26 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Context, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nito.AsyncEx.Context.5.1.0\lib\netstandard2.0\Nito.AsyncEx.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Tasks, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nito.AsyncEx.Tasks.5.1.0\lib\netstandard2.0\Nito.AsyncEx.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.Disposables, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nito.Disposables.2.2.0\lib\net461\Nito.Disposables.dll</HintPath>
+    </Reference>
     <Reference Include="PropertyChanged, Version=3.2.9.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
       <HintPath>..\packages\PropertyChanged.Fody.3.2.9\lib\net40\PropertyChanged.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.4.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -104,16 +119,10 @@
     <Compile Include="Enums\BindingEnums.cs" />
     <Compile Include="Enums\IncomesEnum.cs" />
     <Compile Include="Models\DataPoint.cs" />
-    <Compile Include="ViewModel\Graph1ViewModel.cs" />
-    <Compile Include="ViewModel\Graph2ViewModel.cs" />
-    <Compile Include="ViewModel\Graph3ViewModel.cs" />
-    <Compile Include="View\Graph1.xaml.cs">
-      <DependentUpon>Graph1.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Models\ExchangeDTO.cs" />
     <Compile Include="Models\Incomes.cs">
       <DependentUpon>MoneyDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\IncomeService.cs" />
     <Compile Include="Models\MoneyDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -129,11 +138,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MoneyDBModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\MoneyDTO.cs" />
-    <Compile Include="Enums\OutcomesEnum.cs" />
     <Compile Include="Models\Outcomes.cs">
       <DependentUpon>MoneyDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\Graph1ViewModel.cs" />
+    <Compile Include="ViewModel\Graph2ViewModel.cs" />
+    <Compile Include="ViewModel\Graph3ViewModel.cs" />
+    <Compile Include="View\Graph1.xaml.cs">
+      <DependentUpon>Graph1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IncomeService.cs" />
+    <Compile Include="Models\MoneyDTO.cs" />
+    <Compile Include="Enums\OutcomesEnum.cs" />
     <Compile Include="Models\OutcomeService.cs" />
     <Compile Include="Properties\AppLang\Lang.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -301,6 +317,7 @@
     <Resource Include="Resources\huneng.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\mainbg.png" />
     <Content Include="Models\MoneyDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MoneyDBModel.edmx</DependentUpon>
@@ -311,13 +328,17 @@
       <DependentUpon>MoneyDBModel.edmx</DependentUpon>
       <LastGenOutput>MoneyDBModel.cs</LastGenOutput>
     </Content>
-    <Resource Include="Resources\mainbg.png" />
+    <Resource Include="Resources\bttn1.png" />
+    <Resource Include="Resources\bttn2.png" />
+    <Resource Include="Resources\bttn3.png" />
+    <Resource Include="Resources\bttn1t.png" />
+    <Resource Include="Resources\bttn2t.png" />
+    <Resource Include="Resources\bttn3t.png" />
     <Content Include="SQLServer\WhereIsMyMoneyDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="SQLServer\WhereIsMyMoneyDB_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>WhereIsMyMoneyDB.mdf</DependentUpon>
     </Content>
     <Content Include="WhereIsMyMoneyDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

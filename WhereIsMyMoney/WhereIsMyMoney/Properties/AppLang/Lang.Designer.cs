@@ -115,6 +115,24 @@ namespace WhereIsMyMoney.Properties.AppLang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exchange.
+        /// </summary>
+        public static string exchangebttn {
+            get {
+                return ResourceManager.GetString("exchangebttn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From:.
+        /// </summary>
+        public static string from {
+            get {
+                return ResourceManager.GetString("from", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Graphs.
         /// </summary>
         public static string graphs {
@@ -183,6 +201,15 @@ namespace WhereIsMyMoney.Properties.AppLang {
         public static string saves {
             get {
                 return ResourceManager.GetString("saves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To:.
+        /// </summary>
+        public static string to {
+            get {
+                return ResourceManager.GetString("to", resourceCulture);
             }
         }
         

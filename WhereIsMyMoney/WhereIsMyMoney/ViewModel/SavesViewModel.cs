@@ -10,6 +10,7 @@ namespace WhereIsMyMoney.ViewModel
         public ObservableCollection<MoneyDTO> Outcomes { get; set; }
         public CommandManager calculateCommand { get; }
         public int MyMoney { get; set; }
+        public string MyMoneyStr { get; set; }
         private IncomeService InSrvc;
         private OutcomeService OutSrvc;
         public SavesViewModel()
@@ -19,6 +20,8 @@ namespace WhereIsMyMoney.ViewModel
             loadIncomes();
             loadOutcomes();
             calculateCommand = new CommandManager(loadTotal);
+            MyMoneyStr = " " + MyMoney + " HUF";
+
         }
         private void loadIncomes()
         {
@@ -34,6 +37,7 @@ namespace WhereIsMyMoney.ViewModel
         {
             MyMoney += InSrvc.getTotalIncomes();
             MyMoney -= OutSrvc.getTotalOutcomes();
+            MyMoneyStr = " " + MyMoney + " HUF";
         }
 
     }

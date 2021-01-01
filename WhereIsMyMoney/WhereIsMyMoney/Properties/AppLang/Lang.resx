@@ -132,8 +132,14 @@
   <data name="exchange" xml:space="preserve">
     <value>Exchange</value>
   </data>
+  <data name="exchangebttn" xml:space="preserve">
+    <value>Exchange</value>
+  </data>
   <data name="for" xml:space="preserve">
     <value>For "x" months</value>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>From:</value>
   </data>
   <data name="graphs" xml:space="preserve">
     <value>Graphs</value>
@@ -158,6 +164,9 @@
   </data>
   <data name="saves" xml:space="preserve">
     <value>Savings</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>To:</value>
   </data>
   <data name="total" xml:space="preserve">
     <value>Total Amount</value>

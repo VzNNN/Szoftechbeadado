@@ -11,11 +11,11 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="10"/>
 
         </Grid.ColumnDefinitions>
 
@@ -56,28 +56,29 @@
 
         <DataGrid ItemsSource="{Binding Path=Incomes}" Foreground="DarkGreen" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="1" Grid.RowSpan="6">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="{x:Static languages:Lang.typeofincome}" Binding="{Binding Type}"/>
-                <DataGridTextColumn Header="{x:Static languages:Lang._for}" Binding="{Binding Duration}"/>
-                <DataGridTextColumn Header="{x:Static languages:Lang.monthly}" Binding="{Binding Value}"/>
-                <DataGridTextColumn Header="{x:Static languages:Lang.total}" Binding="{Binding Total}"/>
+                <DataGridTextColumn Width="0.32*" Header="{x:Static languages:Lang.typeofincome}" Binding="{Binding Type}"/>
+                <DataGridTextColumn Width="0.28*" Header="{x:Static languages:Lang._for}" Binding="{Binding Duration}"/>
+                <DataGridTextColumn Width="0.18*" Header="{x:Static languages:Lang.monthly}" Binding="{Binding Value}"/>
+                <DataGridTextColumn Width="0.27*" Header="{x:Static languages:Lang.total}" Binding="{Binding Total}"/>
             </DataGrid.Columns>
         </DataGrid>
         <DataGrid ItemsSource="{Binding Path=Outcomes}" Foreground="DarkRed" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="6">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="{x:Static languages:Lang.typeofoutcome}" Binding="{Binding Type}"/>
-                <DataGridTextColumn Header="{x:Static languages:Lang._for}" Binding="{Binding Duration}"/>
-                <DataGridTextColumn Header="{x:Static languages:Lang.monthly}" Binding="{Binding Value}"/>
-                <DataGridTextColumn Header="{x:Static languages:Lang.total}" Binding="{Binding Total}"/>
+                <DataGridTextColumn Width="0.32*" Header="{x:Static languages:Lang.typeofoutcome}" Binding="{Binding Type}"/>
+                <DataGridTextColumn  Width="0.28*" Header="{x:Static languages:Lang._for}" Binding="{Binding Duration}"/>
+                <DataGridTextColumn Width="0.18*" Header="{x:Static languages:Lang.monthly}" Binding="{Binding Value}"/>
+                <DataGridTextColumn Width="0.27*" Header="{x:Static languages:Lang.total}" Binding="{Binding Total}"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="8"
                     Grid.Column="1"
-                    Grid.ColumnSpan="3">
-            <Label HorizontalAlignment="Center" FontSize="24" Content="{Binding Path=MyMoney}"/>
+                    Grid.ColumnSpan="3"
+                    HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Content="{Binding Path=MyMoneyStr}"/>
             
         </StackPanel>
         <Button  Grid.Row="9"
                     Grid.Column="1"
-                    Grid.ColumnSpan="3" Content="{x:Static languages:Lang.saves}" Command="{Binding Path=calculateCommand}"/>
+                    Grid.ColumnSpan="3" FontSize="20" Content="{x:Static languages:Lang.saves}" Command="{Binding Path=calculateCommand}"/>
     </Grid>
 </UserControl>

@@ -6,29 +6,162 @@
              xmlns:local="clr-namespace:WhereIsMyMoney.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <ImageBrush x:Key="bttn1_MouseOver" ImageSource="../Resources/bttn1.png"/>
+
+        <Style x:Key="bttn1_btn" TargetType="{x:Type Button}">
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="{x:Type Button}">
+
+                        <Border x:Name="button"
+                                BorderThickness="0"
+                                Background="{TemplateBinding Background}"
+                                SnapsToDevicePixels="True">
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+
+                                <Setter Property="Background"
+                                        TargetName="button"
+                                        Value="{StaticResource bttn1_MouseOver}"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+        <ImageBrush x:Key="bttn2_MouseOver" ImageSource="../Resources/bttn2.png"/>
+
+        <Style x:Key="bttn2_btn" TargetType="{x:Type Button}">
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="{x:Type Button}">
+
+                        <Border x:Name="button"
+                                BorderThickness="0"
+                                Background="{TemplateBinding Background}"
+                                SnapsToDevicePixels="True">
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+
+                                <Setter Property="Background"
+                                        TargetName="button"
+                                        Value="{StaticResource bttn2_MouseOver}"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+        <ImageBrush x:Key="bttn3_MouseOver" ImageSource="../Resources/bttn3.png"/>
+
+        <Style x:Key="bttn3_btn" TargetType="{x:Type Button}">
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="{x:Type Button}">
+
+                        <Border x:Name="button"
+                                BorderThickness="0"
+                                Background="{TemplateBinding Background}"
+                                SnapsToDevicePixels="True">
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+
+                                <Setter Property="Background"
+                                        TargetName="button"
+                                        Value="{StaticResource bttn3_MouseOver}"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+    </UserControl.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="100px"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="100px"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="100px"/>
+            <ColumnDefinition Width="130px"/>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="130px"/>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="130px"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
 
             <RowDefinition Height="15px"/>
 
-            <RowDefinition Height="50px"/>
+            <RowDefinition Height="*"/>
 
             <RowDefinition Height="50px"/>
 
 
         </Grid.RowDefinitions>
 
-        <Button Grid.Column="1" Grid.Row="1" Content="Incomes graph" Click="Button_Click"/>
-        <Button Grid.Column="3" Grid.Row="1" Content="Outcomes graph" Click="Button_Click_2"/>
-        <Button Grid.Column="5" Grid.Row="1" Content="Money graph" Click="Button_Click_1"/>
+        <Button Grid.Column="1" Style="{StaticResource bttn1_btn}" Grid.Row="1" x:Name="bttn1" Content="Incomes graph" Click="Button_Click">
+            <Button.Background>
+
+                <ImageBrush ImageSource="../Resources/bttn1t.png"/>
+
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="3" Style="{StaticResource bttn2_btn}" Grid.Row="1" x:Name="bttn2" Content="Outcomes graph" Click="Button_Click_2">
+            <Button.Background>
+
+                <ImageBrush ImageSource="../Resources/bttn2t.png"/>
+
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="5" Style="{StaticResource bttn3_btn}" Grid.Row="1" x:Name="bttn3" Content="Money graph" Click="Button_Click_1">
+            <Button.Background>
+
+                <ImageBrush  ImageSource="../Resources/bttn3t.png"/>
+
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>
