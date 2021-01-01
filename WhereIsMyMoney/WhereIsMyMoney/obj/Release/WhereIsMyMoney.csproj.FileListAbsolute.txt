@@ -328,3 +328,13 @@ C:\Users\horva\OneDrive\Asztali gép\git\WhereIsMyMoney\WhereIsMyMoney\obj\Relea
 C:\Users\horva\OneDrive\Asztali gép\git\WhereIsMyMoney\WhereIsMyMoney\obj\Release\WhereIsMyMoney.csproj.CopyComplete
 C:\Users\horva\OneDrive\Asztali gép\git\WhereIsMyMoney\WhereIsMyMoney\obj\Release\WhereIsMyMoney.exe
 C:\Users\horva\OneDrive\Asztali gép\git\WhereIsMyMoney\WhereIsMyMoney\obj\Release\WhereIsMyMoney.pdb
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Newtonsoft.Json.dll
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Nito.AsyncEx.Context.dll
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Nito.AsyncEx.Tasks.dll
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Nito.Disposables.dll
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\System.Collections.Immutable.dll
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Newtonsoft.Json.xml
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Nito.AsyncEx.Context.xml
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Nito.AsyncEx.Tasks.xml
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\Nito.Disposables.xml
+C:\Users\Bence\Desktop\github\WhereIsMyMoney\WhereIsMyMoney\bin\Release\System.Collections.Immutable.xml

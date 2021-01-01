@@ -12,7 +12,7 @@
     </Window.DataContext>
     <Grid>
 
-        <dxc:ChartControl HorizontalAlignment="Left" Margin="142,75,0,0" VerticalAlignment="Top">
+        <dxc:ChartControl>
             <dxc:ChartControl.Legends>
                 <dxc:Legend/>
             </dxc:ChartControl.Legends>

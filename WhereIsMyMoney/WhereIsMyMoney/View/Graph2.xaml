@@ -17,7 +17,7 @@
                 <dxc:Legend/>
             </dxc:ChartControl.Legends>
             <dxc:XYDiagram2D>
-                <dxc:BarSideBySideSeries2D DisplayName="Annual Statistics" 
+                <dxc:BarSideBySideSeries2D DisplayName="Outcome Types" 
                                            ArgumentDataMember="Argument" 
                                            ValueDataMember="Value" />
             </dxc:XYDiagram2D>

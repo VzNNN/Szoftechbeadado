@@ -133,7 +133,7 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
 
-            <RowDefinition Height="15px"/>
+            <RowDefinition Height="60px"/>
 
             <RowDefinition Height="*"/>
 
@@ -141,6 +141,37 @@
 
 
         </Grid.RowDefinitions>
+
+        <Label
+               FontSize="16"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               FontWeight="Bold"
+            
+            Content="Your incomes&#10;graph"   Grid.Row="0" Grid.Column="1">
+            
+        </Label>
+
+        <Label
+               FontSize="16"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               FontWeight="Bold"
+            Content="Your outcomes&#10;graph"  Grid.Row="0" Grid.Column="3">
+
+        </Label>
+
+        <Label
+            
+               FontSize="16"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               FontWeight="Bold"
+               Content="Total money&#10;distribution"
+            Grid.Row="0" Grid.Column="5">
+
+        </Label>
+
 
         <Button Grid.Column="1" Style="{StaticResource bttn1_btn}" Grid.Row="1" x:Name="bttn1" Content="Incomes graph" Click="Button_Click">
             <Button.Background>
