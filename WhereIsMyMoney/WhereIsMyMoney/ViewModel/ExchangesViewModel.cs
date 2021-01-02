@@ -10,6 +10,7 @@ using System.Collections.ObjectModel;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Nito.AsyncEx;
+using System.Text.RegularExpressions;
 
 namespace WhereIsMyMoney.ViewModel
 {
@@ -71,23 +72,53 @@ namespace WhereIsMyMoney.ViewModel
         {
             double from = 0;
             double to = 0;
-            foreach (var item in Rates)
+
+
+
+            try
             {
-                if (item.Key == From)
+                foreach (var item in Rates)
                 {
-                     from = item.Value;
+                    if (item.Key == From)
+                    {
+                        from = item.Value;
+                    }
+                    if (item.Key == To)
+                    {
+                        to = item.Value;
+                    }
+
                 }
-                if (item.Key == To)
-                {
-                     to = item.Value;
-                }
-                
+
+
+                testdb = Callculate(from,to,To);
             }
+            catch (Exception)
+            {
 
-            
-            testdb = " "+ Math.Round(Changeable / from * to,2)+" "+ To; 
-
+                throw;
+            }
         }
+
+        public string Callculate(double from, double to, string To)
+        {
+            try
+            {
+                testdb = " " + Math.Round(Changeable / from * to, 2) + " " + To;
+            }
+            catch (Exception)
+            {
+
+                testdb = "Something went worng.";
+            }
+           
+
+            return testdb;
+        }
+
+
+
+
 
     }
 }
