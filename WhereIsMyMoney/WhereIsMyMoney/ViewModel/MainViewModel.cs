@@ -7,7 +7,7 @@ namespace WhereIsMyMoney.ViewModel
     public class MainViewModel : BaseViewModel
     {
         private bool darkMode;
-        public bool IsAdmin { get; set; }
+        public bool IsTrue { get; set; }
 
         public bool DarkMode
         {
@@ -19,9 +19,9 @@ namespace WhereIsMyMoney.ViewModel
             }
         }
 
-        public MainViewModel(bool isAdmin)
+        public MainViewModel(bool isTrue)
         {
-            IsAdmin = isAdmin;
+            IsTrue = isTrue;
             DarkMode = false;
         }
 
